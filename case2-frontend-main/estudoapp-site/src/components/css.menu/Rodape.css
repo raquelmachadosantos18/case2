@@ -1,0 +1,51 @@
+.Footer{
+
+    background-color: #3B5044;
+    justify-content: center;
+    color: rgb(253, 253, 253);
+    text-align: center; 
+    margin-top: 15px;
+    font-family: 'Catamaran', sans-serif;
+    width: 100%;
+    
+}
+.img{
+    width: 1px;
+
+}
+.container text center{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Catamaran', sans-serif;
+    
+}
+.cont{
+    display: inline;
+    font-family: 'Catamaran', sans-serif;
+    
+}
+
+.diz{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.diz h2 h4{
+    font-family: 'Catamaran', sans-serif;
+}
+
+.col{
+
+    font-family: 'Catamaran', sans-serif;
+
+}
+
+.logo{
+    display: block;
+    margin:auto;
+    
+}

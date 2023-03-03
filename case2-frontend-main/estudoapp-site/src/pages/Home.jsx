@@ -33,7 +33,7 @@ import {
 function Home() {
 return (
   <>
-<MDBCarousel showIndicators showControls fade>
+<MDBCarousel className='car' showIndicators showControls fade>
       <MDBCarouselItem
         className='w-100 d-block'
         itemId={1}

@@ -5,8 +5,8 @@ import Card from 'react-bootstrap/Card';
 function ItemFuncionalidade(item) {
     return (
         <Col sm="12" md="4" key={item.id}>
-            <Card className='m-3'>
-                <Card.Body>
+            <Card className='event m-3'>
+                <Card.Body className='event'>
                     <Card.Title>
                         <strong>{item.title}</strong>
                     </Card.Title>
@@ -21,7 +21,7 @@ function ItemFuncionalidade(item) {
 
 function ListaFuncionalidades(props) {
     return (
-        <Row>
+        <Row >
             {props.funcionalidades.map(item => ItemFuncionalidade(item))}
         </Row>
     );

@@ -1,72 +1,69 @@
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import { LinkContainer } from 'react-router-bootstrap'
+import React, { useState } from 'react';
 import {
-  MDBContainer,
   MDBNavbar,
+  MDBContainer,
+  MDBIcon,
+  MDBNavbarNav,
+  MDBNavbarItem,
+  MDBNavbarLink,
+  MDBNavbarToggler,
   MDBNavbarBrand,
+  MDBCollapse
 } from 'mdb-react-ui-kit';
-import './Menu.css'
-//import logo from '../pages/img/logo/logo5.png'
-import React, {useState,} from 'react'; // Navbar Transparente
+import logo from '../pages/img/logo.icon/logo.png'
+import '../components/css.menu/Menu.css'
 
 
 
+export default function App() {
+  const [showNavColor, setShowNavColor] = useState(false);
+  const [showNavColorSecond, setShowNavColorSecond] = useState(false);
+  const [showNavColorThird, setShowNavColorThird] = useState(false);
 
+  return (
+    <>
 
-function Menu() {
-// Navbar Transparente
-const [navbar, setNavbar] = useState(false);
-const changeBackground = () => {
-    if(window.scrollY >= 80) {
-        setNavbar(true);
-    } else{
-        setNavbar(false);
-    }
+      <MDBNavbar expand='lg' light style={{ backgroundColor: '#3B5044' }}>
+        <MDBContainer fluid>
+          <MDBNavbarBrand href="/"><img src={logo} width="200px"/></MDBNavbarBrand>
+          <MDBNavbarToggler 
+          className='burguer'
+            type='button'
+            data-target='#navbarColor02'
+            aria-controls='navbarColor02'
+            aria-expanded='false'
+            aria-label='Toggle navigation'
+            backgroundColor='black'
+            onClick={() => setShowNavColorThird(!showNavColorThird)}
+          >
+            <MDBIcon icon='bars' fas />
+          </MDBNavbarToggler>
+          <MDBCollapse show={showNavColorThird} navbar className='me-auto'>
+            <MDBNavbarNav className='me-auto mb-2 mb-lg-0'>
+              <MDBNavbarItem className='active'>
+                <MDBNavbarLink aria-current='page' href='#'>
+                  
+                </MDBNavbarLink>
+              </MDBNavbarItem>
+              <MDBNavbarItem>
+                <MDBNavbarLink href="/">Home</MDBNavbarLink>
+              </MDBNavbarItem>
+              <MDBNavbarItem>
+                <MDBNavbarLink href="/quartos">Quartos</MDBNavbarLink>
+              </MDBNavbarItem>
+              <MDBNavbarItem>
+                <MDBNavbarLink href="/eventos">Eventos</MDBNavbarLink>
+              </MDBNavbarItem>
+              <MDBNavbarItem>
+                <MDBNavbarLink href="/sobre">Sobre</MDBNavbarLink>
+              </MDBNavbarItem>
+              <MDBNavbarItem>
+                <MDBNavbarLink href="/contato">Contato</MDBNavbarLink>
+              </MDBNavbarItem>
+            </MDBNavbarNav>
+          </MDBCollapse>
+        </MDBContainer>
+      </MDBNavbar>
+    </>
+  );
 }
-window.addEventListener('scroll',changeBackground);
-//Navbar Transparente 
-
-    return (
-
-        
-        
-    <Navbar className={navbar ? 'navbar' : 'navbar active'} fixed="top">
-        
-            <LinkContainer to="/">
-            <MDBNavbarBrand href='#'>
-            {/* <img
-              src={logo}
-              height='100'
-              alt=''
-              loading='lazy'
-            /> */}
-          </MDBNavbarBrand>
-            </LinkContainer>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="ms-auto" >
-                    <LinkContainer to="/">
-                        <Nav.Link className='text-white '>Home</Nav.Link>
-                    </LinkContainer>
-                    <LinkContainer to="/quartos">
-                        <Nav.Link className='text-white '>Quartos</Nav.Link>
-                    </LinkContainer>
-                    <LinkContainer to="/eventos">
-                        <Nav.Link className='text-white '>Eventos</Nav.Link>
-                    </LinkContainer>
-                    <LinkContainer to="/sobre">
-                        <Nav.Link className='text-white '>Sobre</Nav.Link>
-                    </LinkContainer>
-                    <LinkContainer to="/contato">
-                        <Nav.Link className='text-white '>Contato</Nav.Link>
-                    </LinkContainer>
-                </Nav>
-            </Navbar.Collapse>
-        
-    </Navbar>
-    
-    )
-}
-
-export default Menu;

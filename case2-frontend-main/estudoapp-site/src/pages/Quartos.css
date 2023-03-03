@@ -1,21 +1,35 @@
-.container1{
-    display: flex;
-}
-
-.cards{
-    width: 10%;
-    height: 10%;
-    margin: 3px;
-}
-
-.img-cards{
-    width: 50%;
-    height: 5%;
-}
-.img-carousel{
-    width: 100%;   
-}
-
-.icon{
+.quarto{
+    margin-top: 180px;
+    justify-items: center;
     text-align: center;
 }
+
+.quarto h1{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.container{
+    justify-items: center;
+    justify-content: center;
+}
+
+.card{
+    display:block !important;
+    margin:auto !important; 
+}
+
+.meu{
+    border: 10px solid #7eb867 ;
+    
+}
+
+.host{
+    background-color: #d5edcc;
+}
+
+
+
+.host h4 h5{
+    font-family: 'Catamaran', sans-serif;
+} 

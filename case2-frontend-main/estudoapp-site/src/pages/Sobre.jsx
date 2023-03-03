@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import CmsApi from '../api/CmsApi'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import '../pages/Sobre.css';
+import '../pages/Sobre.css'
 import cabana1 from '../pages/img/sobre/cabana1.png';
 import banheira_quarto2 from '../pages/img/sobre/banheira_quarto2.jpg';
 import quitandinha from '../pages/img/sobre/palacio_quitandinha.jpg';
@@ -32,7 +32,7 @@ function Sobre() {
     return (
         <>
 
-<Container className='conteudo-margin'>
+<Container className='seu conteudo-margin'>
         <Row>
 
 
@@ -122,4 +122,4 @@ A Pousada é Pet Friendly!</p>
     );
 }
 
-export default Sobre;
+export default Sobre

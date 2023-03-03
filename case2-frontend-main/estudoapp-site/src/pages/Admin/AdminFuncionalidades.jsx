@@ -2,6 +2,7 @@ import {Container, Table, Form, Button} from 'react-bootstrap'
 import {useEffect, useState} from 'react'
 import CmsApi from '../../api/CmsApi'
 import Funcionalidades from './../Funcionalidades';
+import './Admin.css'
 
 function AdminFuncionalidades() {
     const [funcionalidades, setFuncionalidades] = useState([])
@@ -93,7 +94,7 @@ function AdminFuncionalidades() {
 
 
     return (
-        <Container className="conteudo-margin">
+        <Container className=" admin conteudo-margin">
             <h1>Admin Eventos</h1>
             <hr />
             <h2>Adicionar Eventos</h2>

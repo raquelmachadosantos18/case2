@@ -1,0 +1,14 @@
+.minha {
+    margin-top: 100px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.minha h1{
+  background-color: #7eb867;
+  border-radius: 30px;
+  width: 30%;
+}

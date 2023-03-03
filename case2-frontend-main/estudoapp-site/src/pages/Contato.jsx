@@ -1,4 +1,5 @@
 import {Container, Button, Form} from 'react-bootstrap'
+import '../pages/Contato.css'
 
 function Contato() {
 
@@ -10,12 +11,12 @@ function Contato() {
 
     return (
         <Container className='conteudo-margin pt-5'>
-            <h1>Contato</h1>
-            <p>Entre em contato conosco</p>
+            
+            <h1>Entre em contato conosco:</h1>
 
-            <Form onSubmit={handleSubmit}>
+            <Form className='label' onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="Nome">
-                    <Form.Label>Nome</Form.Label>
+                    <Form.Label >Nome</Form.Label>
                     <Form.Control type="text" placeholder="Digite seu nome completo" />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="Email">
@@ -26,7 +27,7 @@ function Contato() {
                     <Form.Label>Mensagem</Form.Label>
                     <Form.Control as="textarea" rows={3} />
                 </Form.Group>
-                <Button variant="primary" type="submit">
+                <Button variant="bg-success" type="submit">
                     Enviar contato
                 </Button>
             </Form>

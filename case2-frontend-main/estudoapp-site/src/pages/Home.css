@@ -1,3 +1,7 @@
+.car{
+    margin-top: 80px;
+}
+
 h1{
     
     justify-content: space-around;
@@ -32,4 +36,9 @@ h1{
     justify-content: center;
     display: flex;
     flex-direction: column;
+}
+.container1{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
 }

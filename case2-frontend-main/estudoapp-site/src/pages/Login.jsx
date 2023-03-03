@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container'
 import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
 import CmsApi from '../api/CmsApi'
+import './Login.css'
 
 function Login() {
 
@@ -23,7 +24,7 @@ function Login() {
     }
 
     return (
-        <Container className='conteudo-margin'>
+        <Container className='login conteudo-margin'>
         <h1>Login</h1>
 
         <Form onSubmit={handleSubmit}>
@@ -36,7 +37,7 @@ function Login() {
                     <Form.Control type="password" placeholder="Digite sua senha" />
                 </Form.Group>
 
-                <Button variant="primary" type="submit">
+                <Button variant="light" type="submit">
                     Realizar Login
                 </Button>
             </Form>

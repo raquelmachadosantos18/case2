@@ -1,0 +1,29 @@
+.Footer{
+    background-color: #3B5044;
+    justify-content: center;
+    color: rgb(253, 253, 253);
+    text-align: center; 
+    margin-top: 15px;
+}
+.img{
+    width: 1px;
+
+}
+.container text center{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cont{
+    display: inline;
+}
+
+.diz{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.col{
+    padding-right: 100px;
+}

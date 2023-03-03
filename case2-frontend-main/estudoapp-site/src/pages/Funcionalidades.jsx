@@ -2,7 +2,11 @@ import ListaFuncionalidades from "../components/ListaFuncionalidades"
 import Container from 'react-bootstrap/Container'
 import { useEffect, useState } from "react"
 import CmsApi from '../api/CmsApi'
+import '../pages/Funcionalidades.css'
 import Carousel from 'react-bootstrap/Carousel'
+import slide1 from '../pages/img/eventos/slide1.jpg'
+import slide2 from '../pages/img/eventos/slide2.jpg'
+import slide3 from '../pages/img/eventos/slide3.jpg'
 
 function Funcionalidades() {
     const [funcionalidades, setFuncionalidades] = useState([])
@@ -23,46 +27,34 @@ function Funcionalidades() {
 
     return (
         <>
-         <Carousel variant="dark" className='conteudo-margin'>
+         <Carousel variant="dark" className='minha'>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="https://via.placeholder.com/1500x300/ffd000"
+                        src={slide1}
                         alt="Slide incrível"
                     />
-                    <Carousel.Caption>
-                        <h5>EstudoApp</h5>
-                        <p>Um app para facilitar a vida do estudante!</p>
-                    </Carousel.Caption>
+                    
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="https://via.placeholder.com/1500x300/ffd000"
+                        src={slide2}
                         alt="Outro slide incrível"
                     />
-                    <Carousel.Caption>
-                        <h5>Quais são as funcionalidades?</h5>
-                        <p>Confira os principais recursos disponíveis no app</p>
-                    </Carousel.Caption>
+                   
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="https://via.placeholder.com/1500x300/ffd000"
+                        src={slide3}
                         alt="Último slide"
                     />
-                    <Carousel.Caption>
-                        <h5>Contato para parcerias?</h5>
-                        <p>
-                            Entre em contato com a nossa equipe para conversar sobre oportunidades de parceria
-                        </p>
-                    </Carousel.Caption>
+                    
                 </Carousel.Item>
             </Carousel>
-
         
-        <Container className="conteudo-margin">
+        <Container className="minha conteudo-margin mp-5">
             <h1>Eventos</h1>
             <ListaFuncionalidades funcionalidades={funcionalidades} />
         </Container>

@@ -35,7 +35,7 @@ function AdminSobre() {
     }
 
     return (
-        <Container className="conteudo-margin">
+        <Container className=" admin conteudo-margin">
             <h1>Admin Sobre</h1>
             <hr />
             <Form onSubmit={handleSubmit}>
