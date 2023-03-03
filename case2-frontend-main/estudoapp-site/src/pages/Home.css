@@ -1,0 +1,35 @@
+h1{
+    
+    justify-content: space-around;
+    display: flex;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+.atividade{
+    font-family: 'Playfair Display', serif !important;
+    font-size: 20px !important;
+
+}
+.equipe{
+    border-radius: none;
+}
+.cards1{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-style:solid;
+    border-color: #D5EDCC;
+    border-radius: 10px;
+    border-width: 2px;
+    padding-top: 3px;
+    
+}
+.o-que-oferecemos{
+    margin-top: 30px;
+}
+.icon{
+    justify-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
